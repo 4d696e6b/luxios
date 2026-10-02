@@ -7,6 +7,7 @@ All notable changes to Luxios are documented here.
 - Replaced the placeholder crown icon with the original gold crown artwork supplied for Luxios.
 - Linked the README icon to the exact public artwork so it loads in the installed extension details view.
 - Created the `4d696e6b` Marketplace publisher for release preparation.
+- Added the supplied crown artwork to the public Marketplace publisher profile.
 
 ## 0.1.4 — Unreleased
 
