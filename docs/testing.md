@@ -19,7 +19,7 @@ Use this document as the acceptance checklist for each release candidate. Record
 
 ## Language fixtures
 
-- Review JavaScript, TypeScript, JSX, TSX, HTML, CSS, SCSS, JSON, JSONC, Markdown, and Python.
+- Review JavaScript, TypeScript, JSX, TSX, HTML, CSS, SCSS, JSON, JSONC, Markdown, and Python using the committed files in `examples/`.
 - Inspect representative tokens with **Developer: Inspect Editor Tokens and Scopes**.
 - Repeat TypeScript/React and Python checks with semantic highlighting both enabled and disabled.
 - Add the smallest specific TextMate or semantic rule for an observed defect; avoid broad overrides.

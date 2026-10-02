@@ -1,0 +1,7 @@
+{
+  // JSONC keys should remain distinct from their values.
+  "name": "Luxios",
+  "contrastTarget": 4.5,
+  "semanticHighlighting": true,
+  "variants": ["Luxios Midnight", "Luxios OLED", "Luxios Royale"]
+}

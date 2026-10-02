@@ -1,0 +1,19 @@
+:root {
+  --canvas: #0b1120;
+  --accent: #d6b56d;
+}
+
+.theme-preview[data-theme="luxios"] {
+  display: grid;
+  min-height: 12rem;
+  place-items: center;
+  color: var(--accent);
+  background: var(--canvas);
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 35%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .theme-preview:hover {
+    transform: translateY(-1px);
+  }
+}
