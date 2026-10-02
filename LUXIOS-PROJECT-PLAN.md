@@ -233,7 +233,7 @@ The core identifiers are documented in the [VS Code theme color reference](https
 
 **Recommended default:** top and bottom edges `#A58A52`, active background Surface, active foreground Primary, inactive background Recessed, inactive foreground Secondary, shared separators Structural border. Set unfocused active edges to Dark gold and test dirty/pinned tabs. Keep the dirty indicator recognizable.
 
-This is a two-edge frame approximation, not a full border. Do not make `tab.border` gold just to simulate the missing sides. **Experimental:** test `contrastActiveBorder` locally, but reject it if it adds unwanted outlines elsewhere. A screenshot must not imply a full frame that users cannot obtain.
+This is a two-edge frame approximation, not a full border. The current Luxios design also uses muted gold for `tab.border` and other structural separators, creating a deliberately framed workspace rather than simulating missing active-tab sides. **Experimental:** test `contrastActiveBorder` locally, but reject it if it adds unwanted outlines elsewhere. A screenshot must not imply a full frame that users cannot obtain.
 
 **Beyond a theme:** forcing a full workbench tab outline via injected CSS or DOM patching is not a supported ordinary extension customization. It is excluded from Luxios.
 

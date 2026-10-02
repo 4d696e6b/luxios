@@ -87,6 +87,13 @@ const controlBorders = {
   "Luxios Royale": "#B29552"
 };
 
+const structuralFrames = {
+  "Luxios": { sidebar: "#D6B56D", frame: "#A58A52" },
+  "Luxios Midnight": { sidebar: "#BFA46F", frame: "#978057" },
+  "Luxios OLED": { sidebar: "#D6B56D", frame: "#A58A52" },
+  "Luxios Royale": { sidebar: "#DDB84A", frame: "#B29552" }
+};
+
 for (const candidate of themes.slice(1)) {
   for (const [token, expected] of Object.entries(variantExpectations[candidate.name])) {
     if (candidate.colors[token] !== expected) failures.push(`${candidate.name}: ${token} must be ${expected}.`);
@@ -97,6 +104,14 @@ for (const candidate of themes) {
   const expected = controlBorders[candidate.name];
   for (const token of ["input.border", "checkbox.border", "dropdown.border"]) {
     if (inheritedColor(candidate, token) !== expected) failures.push(`${candidate.name}: ${token} must keep the persistent gold control frame.`);
+  }
+}
+
+for (const candidate of themes) {
+  const { sidebar, frame } = structuralFrames[candidate.name];
+  if (inheritedColor(candidate, "sideBar.border") !== sidebar) failures.push(`${candidate.name}: the open Sidebar must keep its strong gold frame.`);
+  for (const token of ["activityBar.border", "editorGroup.border", "editorGroupHeader.tabsBorder", "tab.border", "panel.border", "statusBar.border"]) {
+    if (inheritedColor(candidate, token) !== frame) failures.push(`${candidate.name}: ${token} must keep a gold structural frame.`);
   }
 }
 
