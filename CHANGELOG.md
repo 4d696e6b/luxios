@@ -9,5 +9,6 @@ All notable changes to Luxios are documented here.
 - Added CI packaging and documented testing and release checks.
 - Set the initial compatibility floor to VS Code 1.96 after a local compatibility audit.
 - Fixed the no-folder status bar fallback for all variants.
+- Made control borders persistently gold and strengthened selected/focused control states.
 - Added initial TextMate and semantic token rules for web development and Python.
 - Added core workbench, terminal, Git, diagnostics, diff, notebook, and supported chat colors.

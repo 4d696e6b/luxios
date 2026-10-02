@@ -54,8 +54,8 @@
     "panel.border": "#354155",
     "editorGroupHeader.tabsBorder": "#354155",
     "tab.border": "#354155",
-    "input.border": "#68758C",
-    "checkbox.border": "#68758C",
-    "dropdown.border": "#68758C"
+    "input.border": "#A58A52",
+    "checkbox.border": "#A58A52",
+    "dropdown.border": "#A58A52"
   }
 }

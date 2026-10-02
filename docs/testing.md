@@ -14,6 +14,7 @@ Use this document as the acceptance checklist for each release candidate. Record
 
 - Load each variant in an Extension Development Host with a clean profile.
 - Test focused and unfocused editor groups, active/inactive/dirty tabs, keyboard focus, selections, hover states, menus, inputs, and disabled controls.
+- Confirm idle controls retain their muted-gold frame, while selected and keyboard-focused controls use the brighter focus border and warm selection surface. This is Luxios's supported glow treatment; VS Code does not expose a general blur or bloom token.
 - Test the command palette, suggestion widget, hover, peek, find/replace, multiple editor groups, sidebar, panel, status bar, terminal, Source Control, Problems, diff, merge, debugging, notebooks, and settings.
 - Test available native chat and inline-chat surfaces. Record the exact host and VS Code build; do not generalize an observed surface to all AI extensions.
 

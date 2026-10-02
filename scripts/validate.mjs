@@ -80,9 +80,23 @@ const variantExpectations = {
   }
 };
 
+const controlBorders = {
+  "Luxios": "#A58A52",
+  "Luxios Midnight": "#A58A52",
+  "Luxios OLED": "#A58A52",
+  "Luxios Royale": "#B29552"
+};
+
 for (const candidate of themes.slice(1)) {
   for (const [token, expected] of Object.entries(variantExpectations[candidate.name])) {
     if (candidate.colors[token] !== expected) failures.push(`${candidate.name}: ${token} must be ${expected}.`);
+  }
+}
+
+for (const candidate of themes) {
+  const expected = controlBorders[candidate.name];
+  for (const token of ["input.border", "checkbox.border", "dropdown.border"]) {
+    if (inheritedColor(candidate, token) !== expected) failures.push(`${candidate.name}: ${token} must keep the persistent gold control frame.`);
   }
 }
 
