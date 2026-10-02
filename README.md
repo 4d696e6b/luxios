@@ -12,9 +12,9 @@ Every control keeps a muted-gold frame. Selected controls gain a warmer surface,
 
 The extension icon uses the [original gold crown artwork](https://github.com/4d696e6b/luxios/blob/116a703e443414ee83c24c0f7d354930662fbde8/icons/source/luxios-crown-original.png).
 
-## Current build
+## Current release
 
-Luxios `0.1.5` is a local release-preparation build. Its four variants are:
+Luxios `0.1.6` is the current Marketplace release. Its four variants are:
 
 - **Luxios** — balanced dark navy and champagne-gold accents for everyday work.
 - **Luxios Midnight** — deeper surfaces and softer gold for late sessions.
@@ -36,7 +36,7 @@ Open this folder in VS Code and run **Extension: Run Extension**. In the Extensi
 
 The fixtures in `examples/web` and `examples/python` are the initial syntax-review files. Use **Developer: Inspect Editor Tokens and Scopes** before expanding a token rule.
 
-`npm run package` creates a local VSIX after validation. The [testing record](docs/testing.md) and [release checklist](docs/release.md) document the review required before any public release.
+`npm run package` creates a local VSIX after validation. The [testing record](docs/testing.md) and [release checklist](docs/release.md) document the review behind each public release.
 
 ## Contributing
 
