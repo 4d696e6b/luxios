@@ -105,9 +105,9 @@
     "editorIndentGuide.activeBackground1": "#D6B56D",
     "editorBracketMatch.background": "#D6B56D18",
     "editorBracketMatch.border": "#D6B56D",
-    "editorBracketHighlight.foreground1": "#82AAE3",
-    "editorBracketHighlight.foreground2": "#7FC7CC",
-    "editorBracketHighlight.foreground3": "#C4A7E7",
+    "editorBracketHighlight.foreground1": "#8ABEFF",
+    "editorBracketHighlight.foreground2": "#79D8D8",
+    "editorBracketHighlight.foreground3": "#D7B0F4",
     "editorBracketHighlight.unexpectedBracket.foreground": "#ED8796",
     "editor.findMatchBackground": "#D6B56D33",
     "editor.findMatchBorder": "#D6B56D",
@@ -346,37 +346,37 @@
     {
       "name": "Strings",
       "scope": ["string", "string.quoted", "string.template", "markup.inline.raw"],
-      "settings": { "foreground": "#9BCB9A" }
+      "settings": { "foreground": "#A7E5A4" }
     },
     {
       "name": "String escapes and numeric literals",
       "scope": ["constant.character.escape", "constant.numeric"],
-      "settings": { "foreground": "#E5B07B" }
+      "settings": { "foreground": "#F3BE85" }
     },
     {
       "name": "Keywords and language constants",
       "scope": ["keyword", "storage", "constant.language", "support.constant"],
-      "settings": { "foreground": "#C4A7E7" }
+      "settings": { "foreground": "#D7B0F4" }
     },
     {
       "name": "Functions and methods",
       "scope": ["entity.name.function", "support.function", "meta.function-call", "variable.function"],
-      "settings": { "foreground": "#82AAE3" }
+      "settings": { "foreground": "#8ABEFF" }
     },
     {
       "name": "Types and classes",
       "scope": ["entity.name.type", "entity.name.class", "support.type", "support.class", "entity.name.namespace"],
-      "settings": { "foreground": "#7FC7CC" }
+      "settings": { "foreground": "#79D8D8" }
     },
     {
       "name": "Properties, keys, and attributes",
       "scope": ["variable.other.property", "variable.other.object.property", "entity.other.attribute-name", "meta.object-literal.key", "support.type.property-name", "entity.name.tag"],
-      "settings": { "foreground": "#B3CFF2" }
+      "settings": { "foreground": "#B9D8FF" }
     },
     {
       "name": "Constants and enum members",
       "scope": ["variable.other.constant", "constant.other", "variable.other.enummember"],
-      "settings": { "foreground": "#D9B080" }
+      "settings": { "foreground": "#F2C68D" }
     },
     {
       "name": "Operators and punctuation",
@@ -386,40 +386,40 @@
     {
       "name": "Markup headings",
       "scope": ["markup.heading", "entity.name.section"],
-      "settings": { "foreground": "#82AAE3", "fontStyle": "bold" }
+      "settings": { "foreground": "#8ABEFF", "fontStyle": "bold" }
     },
     {
       "name": "Markup links",
       "scope": ["markup.underline.link", "string.other.link"],
-      "settings": { "foreground": "#82AAE3", "fontStyle": "underline" }
+      "settings": { "foreground": "#8ABEFF", "fontStyle": "underline" }
     }
   ],
   "semanticTokenColors": {
     "comment": "#8B95A7",
-    "string": "#9BCB9A",
-    "regexp": "#9BCB9A",
-    "number": "#E5B07B",
-    "keyword": "#C4A7E7",
+    "string": "#A7E5A4",
+    "regexp": "#A7E5A4",
+    "number": "#F3BE85",
+    "keyword": "#D7B0F4",
     "operator": "#CAD2DF",
-    "function": "#82AAE3",
-    "function.defaultLibrary": "#82AAE3",
-    "method": "#82AAE3",
-    "method.defaultLibrary": "#82AAE3",
-    "type": "#7FC7CC",
-    "type.defaultLibrary": "#7FC7CC",
-    "class": "#7FC7CC",
-    "class.defaultLibrary": "#7FC7CC",
-    "interface": "#7FC7CC",
-    "enum": "#7FC7CC",
-    "struct": "#7FC7CC",
-    "typeParameter": "#7FC7CC",
+    "function": "#8ABEFF",
+    "function.defaultLibrary": "#8ABEFF",
+    "method": "#8ABEFF",
+    "method.defaultLibrary": "#8ABEFF",
+    "type": "#79D8D8",
+    "type.defaultLibrary": "#79D8D8",
+    "class": "#79D8D8",
+    "class.defaultLibrary": "#79D8D8",
+    "interface": "#79D8D8",
+    "enum": "#79D8D8",
+    "struct": "#79D8D8",
+    "typeParameter": "#79D8D8",
     "namespace": "#E8ECF3",
     "variable": "#E8ECF3",
     "parameter": "#E8ECF3",
-    "property": "#B3CFF2",
-    "property.readonly": "#D9B080",
-    "variable.readonly": "#D9B080",
-    "enumMember": "#D9B080",
-    "decorator": "#C4A7E7"
+    "property": "#B9D8FF",
+    "property.readonly": "#F2C68D",
+    "variable.readonly": "#F2C68D",
+    "enumMember": "#F2C68D",
+    "decorator": "#D7B0F4"
   }
 }

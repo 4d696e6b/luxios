@@ -131,6 +131,13 @@ for (const candidate of themes) {
   }
 }
 
+for (const candidate of themes) {
+  for (const token of ["string", "number", "keyword", "function", "type", "property", "enumMember"]) {
+    const ratio = contrast(theme.semanticTokenColors[token], inheritedColor(candidate, "editor.background"));
+    if (ratio < 7) failures.push(`${candidate.name}: ${token} syntax contrast is ${ratio.toFixed(2)}:1; expected at least 7:1.`);
+  }
+}
+
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exitCode = 1;

@@ -2,6 +2,10 @@
 
 All notable changes to Luxios are documented here.
 
+## 0.1.3 — Unreleased
+
+- Brightened the main syntax palette for clearer keywords, functions, types, strings, numbers, and properties.
+
 ## 0.1.2 — Unreleased
 
 - Removed the active panel-title selection box and strengthened the visible outer window frame.
