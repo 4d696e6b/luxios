@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icons/luxios-icon.png" width="128" alt="Luxios crown code mark">
+  <img src="https://raw.githubusercontent.com/4d696e6b/luxios/116a703e443414ee83c24c0f7d354930662fbde8/icons/luxios-icon.png" width="128" alt="Luxios crown code mark">
 </p>
 
 # Luxios
@@ -10,9 +10,11 @@ Luxios is a dark VS Code theme built around deep navy surfaces, restrained champ
 
 Every control keeps a muted-gold frame. Selected controls gain a warmer surface, and keyboard focus moves to bright champagne gold—Luxios's glow-like treatment within the colors VS Code exposes.
 
+The extension icon uses the [original gold crown artwork](https://github.com/4d696e6b/luxios/blob/116a703e443414ee83c24c0f7d354930662fbde8/icons/source/luxios-crown-original.png).
+
 ## Current build
 
-Luxios `0.1.4` is a local release-preparation build. Its four variants are:
+Luxios `0.1.5` is a local release-preparation build. Its four variants are:
 
 - **Luxios** — balanced dark navy and champagne-gold accents for everyday work.
 - **Luxios Midnight** — deeper surfaces and softer gold for late sessions.

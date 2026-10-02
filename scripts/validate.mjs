@@ -1,4 +1,5 @@
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
+import { visit } from "jsonc-parser";
 
 const themePaths = {
   "Luxios": "themes/luxios-color-theme.json",
@@ -20,10 +21,46 @@ const contrast = (first, second) => {
   return (light + 0.05) / (dark + 0.05);
 };
 
-const [manifest, ...themes] = await Promise.all(files.map(async (file) => JSON.parse(await readFile(file, "utf8"))));
-const lockfile = JSON.parse(await readFile("package-lock.json", "utf8"));
-const theme = themes[0];
 const failures = [];
+const parseJson = async (file) => {
+  const source = await readFile(file, "utf8");
+  const objects = [];
+  visit(source, {
+    onObjectBegin: () => objects.push(new Set()),
+    onObjectProperty: (property, offset) => {
+      const properties = objects.at(-1);
+      if (properties.has(property)) failures.push(`${file}: duplicate key ${JSON.stringify(property)} at offset ${offset}.`);
+      properties.add(property);
+    },
+    onObjectEnd: () => objects.pop(),
+    onError: (error, offset) => failures.push(`${file}: invalid JSON at offset ${offset} (error ${error}).`)
+  }, { disallowComments: true, allowTrailingComma: false });
+  return JSON.parse(source);
+};
+
+const [manifest, ...themes] = await Promise.all(files.map(parseJson));
+const lockfile = await parseJson("package-lock.json");
+const theme = themes[0];
+
+for (const file of ["README.md", "CHANGELOG.md", "LICENSE", manifest.icon, ...Object.values(themePaths)]) {
+  try {
+    await access(file);
+  } catch {
+    failures.push(`${file} must exist for the Luxios package.`);
+  }
+}
+
+const [icon, originalIcon] = await Promise.all([
+  readFile(manifest.icon),
+  readFile("icons/source/luxios-crown-original.png")
+]);
+const pngSignature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
+if (!icon.subarray(0, 8).equals(pngSignature) || icon.readUInt32BE(16) < 128 || icon.readUInt32BE(20) < 128) {
+  failures.push("Luxios icon must be a PNG at least 128 by 128 pixels.");
+}
+if (!icon.equals(originalIcon)) {
+  failures.push("The packaged Luxios icon must match the supplied crown artwork exactly.");
+}
 
 if (lockfile.version !== manifest.version || lockfile.packages?.[""]?.version !== manifest.version) {
   failures.push("package-lock.json must match the manifest version.");

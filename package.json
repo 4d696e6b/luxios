@@ -2,7 +2,7 @@
   "name": "luxios",
   "displayName": "Luxios",
   "description": "A refined dark VS Code theme with navy surfaces, champagne-gold accents, and clear everyday syntax.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "4d696e6b",
   "icon": "icons/luxios-icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -42,7 +42,8 @@
     "list-package": "vsce ls"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.7.1"
+    "@vscode/vsce": "3.9.2",
+    "jsonc-parser": "3.3.1"
   },
   "contributes": {
     "themes": [
