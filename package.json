@@ -42,7 +42,7 @@
     "list-package": "vsce ls"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.7.1",
+    "@vscode/vsce": "3.9.2",
     "jsonc-parser": "3.3.1"
   },
   "contributes": {
