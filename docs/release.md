@@ -2,7 +2,7 @@
 
 ## Before publishing
 
-- Verify ownership of Marketplace publisher `4d696e6b`. The owner selected this ID for Luxios, but Marketplace access has not yet been confirmed.
+- Create Marketplace publisher `4d696e6b` through publisher management and verify access before publishing. The owner selected this ID and confirmed it has not yet been created.
 - The public `4d696e6b/luxios` GitHub repository and its manifest links are live, with `main` as the default branch and `dev` for ongoing work. The current `engines.vscode` floor is `^1.96.0`, based on package installation against the locally available VS Code 1.96.2 build; newer native chat details are optional and require a newer build to verify visually.
 - Complete the test record in `docs/testing.md` for every variant.
 - Update `CHANGELOG.md`, version, README screenshots, and Marketplace metadata.

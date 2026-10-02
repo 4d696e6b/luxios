@@ -8,6 +8,10 @@ On 2026-10-02, Luxios `0.1.4` was packaged with Node.js 22.12.0 on macOS 14.7.2.
 
 This records package and installation checks. The final screenshot set, current-build visual review of every variant, Windows smoke test, and physical OLED review are still pending; no result is inferred from the automated checks.
 
+## Working-profile visual smoke check
+
+On 2026-10-02, the TSX fixture was viewed in Luxios, Midnight, OLED, and Royale in an existing macOS VS Code profile; the Python fixture was viewed in Royale. The four variants appeared in the theme picker, gold Sidebar and tab separators remained visible, and OLED used a black editor surface. The checked palette came from the installed `0.1.3` build; the four theme JSON files are unchanged in `0.1.4`. This profile has unrelated extensions and user settings, and the standalone TSX fixture reports missing React dependencies, so this is not the clean-profile release review or the final screenshot set.
+
 ## Automated checks
 
 - Run `npm ci` followed by `npm run validate`. It checks JSON structure, variant inheritance, and the declared text/control contrast targets across all four variants.
