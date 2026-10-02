@@ -6,7 +6,12 @@ Luxios is a dark VS Code theme built around deep navy surfaces, restrained champ
 
 ## Prototype status
 
-This repository currently contains the `0.1.0` default-theme prototype. Midnight, OLED, and Royale are planned after the default theme completes visual validation.
+This repository currently contains the `0.1.0` theme-family prototype.
+
+- **Luxios** — balanced dark navy and champagne-gold accents for everyday work.
+- **Luxios Midnight** — deeper surfaces and softer gold for late sessions.
+- **Luxios OLED** — black primary surfaces with carefully separated controls.
+- **Luxios Royale** — a richer gold presentation that keeps syntax and status colors conventional.
 
 ## Development
 

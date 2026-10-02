@@ -42,6 +42,21 @@
         "label": "Luxios",
         "uiTheme": "vs-dark",
         "path": "./themes/luxios-color-theme.json"
+      },
+      {
+        "label": "Luxios Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/luxios-midnight-color-theme.json"
+      },
+      {
+        "label": "Luxios OLED",
+        "uiTheme": "vs-dark",
+        "path": "./themes/luxios-oled-color-theme.json"
+      },
+      {
+        "label": "Luxios Royale",
+        "uiTheme": "vs-dark",
+        "path": "./themes/luxios-royale-color-theme.json"
       }
     ]
   }
