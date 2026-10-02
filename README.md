@@ -28,6 +28,8 @@ Open this folder in VS Code and run **Extension: Run Extension**. In the Extensi
 
 The fixtures in `examples/web` and `examples/python` are the initial syntax-review files. Use **Developer: Inspect Editor Tokens and Scopes** before expanding a token rule.
 
+`npm run package` creates a local VSIX after validation. The [testing record](docs/testing.md) and [release checklist](docs/release.md) document the review required before any public release.
+
 ## License
 
 [MIT](LICENSE)

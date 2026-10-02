@@ -2,6 +2,7 @@
 .gitignore
 .github/**
 .vscode/**
+docs/**
 examples/**
 icons/source/**
 scripts/**

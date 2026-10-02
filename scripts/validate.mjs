@@ -56,6 +56,30 @@ const pairs = [
   ["gold button text", "#0B1120", "#D6B56D", 4.5]
 ];
 
+const variantExpectations = {
+  "Luxios Midnight": {
+    "editor.background": "#080D17",
+    "activityBar.background": "#050810",
+    "button.background": "#BFA46F"
+  },
+  "Luxios OLED": {
+    "editor.background": "#000000",
+    "activityBar.background": "#000000",
+    "panel.background": "#080C12"
+  },
+  "Luxios Royale": {
+    "editor.background": "#0B1020",
+    "activityBar.background": "#070A13",
+    "button.background": "#DDB84A"
+  }
+};
+
+for (const candidate of themes.slice(1)) {
+  for (const [token, expected] of Object.entries(variantExpectations[candidate.name])) {
+    if (candidate.colors[token] !== expected) failures.push(`${candidate.name}: ${token} must be ${expected}.`);
+  }
+}
+
 for (const [name, foreground, background, minimum] of pairs) {
   const ratio = contrast(foreground, background);
   if (ratio < minimum) failures.push(`${name} is ${ratio.toFixed(2)}:1; expected at least ${minimum}:1.`);
