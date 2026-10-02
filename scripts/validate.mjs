@@ -63,16 +63,19 @@ const variantExpectations = {
   "Luxios Midnight": {
     "editor.background": "#080D17",
     "activityBar.background": "#050810",
+    "statusBar.noFolderBackground": "#050810",
     "button.background": "#BFA46F"
   },
   "Luxios OLED": {
     "editor.background": "#000000",
     "activityBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
     "panel.background": "#080C12"
   },
   "Luxios Royale": {
     "editor.background": "#0B1020",
     "activityBar.background": "#070A13",
+    "statusBar.noFolderBackground": "#070A13",
     "button.background": "#DDB84A"
   }
 };

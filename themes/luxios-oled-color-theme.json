@@ -18,6 +18,7 @@
     "editorGroupHeader.tabsBackground": "#000000",
     "tab.inactiveBackground": "#000000",
     "statusBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
     "terminal.background": "#000000",
     "terminalCursor.background": "#000000",
     "tab.activeBackground": "#080C12",
