@@ -2,6 +2,10 @@
 
 All notable changes to Luxios are documented here.
 
+## 0.1.4 — Unreleased
+
+- Prepared the extension identity, license metadata, keywords, and gallery banner for release review.
+
 ## 0.1.3 — Unreleased
 
 - Brightened the main syntax palette for clearer keywords, functions, types, strings, numbers, and properties.

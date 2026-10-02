@@ -10,14 +10,18 @@ Luxios is a dark VS Code theme built around deep navy surfaces, restrained champ
 
 Every control keeps a muted-gold frame. Selected controls gain a warmer surface, and keyboard focus moves to bright champagne gold—Luxios's glow-like treatment within the colors VS Code exposes.
 
-## Prototype status
+## Current build
 
-This repository currently contains the `0.1.0` theme-family prototype.
+Luxios `0.1.4` is a local release-preparation build. Its four variants are:
 
 - **Luxios** — balanced dark navy and champagne-gold accents for everyday work.
 - **Luxios Midnight** — deeper surfaces and softer gold for late sessions.
 - **Luxios OLED** — black primary surfaces with carefully separated controls.
 - **Luxios Royale** — a richer gold presentation that keeps syntax and status colors conventional.
+
+To try a packaged build, run **Extensions: Install from VSIX…** in VS Code, choose the latest `luxios-*.vsix`, and then select a variant with **Preferences: Color Theme** (`⌘K ⌘T` on macOS).
+
+VS Code themes control border colors but cannot change the thickness of the outer application border or create a blurred glow.
 
 ## Development
 

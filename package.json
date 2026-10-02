@@ -2,10 +2,15 @@
   "name": "luxios",
   "displayName": "Luxios",
   "description": "A refined dark VS Code theme with navy surfaces, champagne-gold accents, and clear everyday syntax.",
-  "version": "0.1.3",
-  "publisher": "zeaek",
+  "version": "0.1.4",
+  "publisher": "4d696e6b",
   "icon": "icons/luxios-icon.png",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
+  "pricing": "Free",
+  "galleryBanner": {
+    "color": "#070B14",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -17,18 +22,20 @@
     "dark",
     "navy",
     "gold",
+    "luxury",
+    "oled",
     "python",
     "typescript",
     "react"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeaek/luxios.git"
+    "url": "https://github.com/4d696e6b/luxios.git"
   },
   "bugs": {
-    "url": "https://github.com/zeaek/luxios/issues"
+    "url": "https://github.com/4d696e6b/luxios/issues"
   },
-  "homepage": "https://github.com/zeaek/luxios#readme",
+  "homepage": "https://github.com/4d696e6b/luxios#readme",
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "package": "npm run validate && vsce package",

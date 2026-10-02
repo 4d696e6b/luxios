@@ -2,8 +2,8 @@
 
 ## Before publishing
 
-- Choose and verify the final Marketplace publisher ID. The current manifest's publisher is a development placeholder until ownership is confirmed.
-- Confirm the final GitHub repository, homepage, bugs URL, and author copyright name. The current `engines.vscode` floor is `^1.96.0`, based on package installation against the locally available VS Code 1.96.2 build; newer native chat details are optional and require a newer build to verify visually.
+- Verify ownership of Marketplace publisher `4d696e6b`. The owner selected this ID for Luxios, but Marketplace access has not yet been confirmed.
+- Create and verify the public `4d696e6b/luxios` GitHub repository before publishing; the manifest's repository, homepage, and issues links point there. The current `engines.vscode` floor is `^1.96.0`, based on package installation against the locally available VS Code 1.96.2 build; newer native chat details are optional and require a newer build to verify visually.
 - Complete the test record in `docs/testing.md` for every variant.
 - Update `CHANGELOG.md`, version, README screenshots, and Marketplace metadata.
 - Run `npm ci`, `npm run validate`, `npm run package`, and `npm run list-package`.

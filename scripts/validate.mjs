@@ -21,8 +21,13 @@ const contrast = (first, second) => {
 };
 
 const [manifest, ...themes] = await Promise.all(files.map(async (file) => JSON.parse(await readFile(file, "utf8"))));
+const lockfile = JSON.parse(await readFile("package-lock.json", "utf8"));
 const theme = themes[0];
 const failures = [];
+
+if (lockfile.version !== manifest.version || lockfile.packages?.[""]?.version !== manifest.version) {
+  failures.push("package-lock.json must match the manifest version.");
+}
 
 if (manifest.contributes?.themes?.length !== 4 || manifest.contributes.themes.some(({ label, path }) => themePaths[label] !== path.replace(/^\.\//, ""))) {
   failures.push("package.json must contribute all four Luxios theme variants.");
