@@ -115,6 +115,13 @@ for (const candidate of themes) {
   }
 }
 
+for (const candidate of themes) {
+  const panelBackground = inheritedColor(candidate, "panel.background");
+  for (const token of ["panelTitle.border", "panelTitle.activeBorder"]) {
+    if (inheritedColor(candidate, token) !== panelBackground) failures.push(`${candidate.name}: ${token} must not draw a panel-title selection box.`);
+  }
+}
+
 const contrastResults = [];
 for (const candidate of themes) {
   for (const [name, foreground, background, minimum] of contrastPairs(candidate)) {

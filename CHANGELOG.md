@@ -2,6 +2,10 @@
 
 All notable changes to Luxios are documented here.
 
+## 0.1.2 — Unreleased
+
+- Removed the active panel-title selection box and strengthened the visible outer window frame.
+
 ## 0.1.1 — Unreleased
 
 - Strengthened gold workbench frames, including the open Sidebar edge and structural separators.
