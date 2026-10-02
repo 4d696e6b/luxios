@@ -2,7 +2,7 @@
 
 ## Before publishing
 
-- Marketplace publisher [`4d696e6b`](https://marketplace.visualstudio.com/publishers/4d696e6b) was created on 2026-10-02 with Owner access. Its public profile displays the supplied Luxios crown as its logo. Verify that access remains available before publishing.
+- Marketplace publisher [`4d696e6b`](https://marketplace.visualstudio.com/publishers/4d696e6b) was created on 2026-10-02 with Owner access. Its public profile displays the supplied Luxios crown as its logo. Version 0.1.5 was uploaded on 2026-10-02 and is currently marked Public / Verifying by Marketplace.
 - The public `4d696e6b/luxios` GitHub repository and its manifest links are live, with `main` as the default branch and `dev` for ongoing work. The current `engines.vscode` floor is `^1.96.0`, based on package installation against the locally available VS Code 1.96.2 build; newer native chat details are optional and require a newer build to verify visually.
 - Complete the test record in `docs/testing.md` for every variant.
 - Update `CHANGELOG.md`, version, README screenshots, and Marketplace metadata.
