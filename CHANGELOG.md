@@ -2,6 +2,11 @@
 
 All notable changes to Luxios are documented here.
 
+## 0.1.5 — Unreleased
+
+- Replaced the placeholder crown icon with the original gold crown artwork supplied for Luxios.
+- Created the `4d696e6b` Marketplace publisher for release preparation.
+
 ## 0.1.4 — Unreleased
 
 - Prepared the extension identity, license metadata, keywords, and gallery banner for release review.

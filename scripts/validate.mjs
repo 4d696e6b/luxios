@@ -50,6 +50,18 @@ for (const file of ["README.md", "CHANGELOG.md", "LICENSE", manifest.icon, ...Ob
   }
 }
 
+const [icon, originalIcon] = await Promise.all([
+  readFile(manifest.icon),
+  readFile("icons/source/luxios-crown-original.png")
+]);
+const pngSignature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
+if (!icon.subarray(0, 8).equals(pngSignature) || icon.readUInt32BE(16) < 128 || icon.readUInt32BE(20) < 128) {
+  failures.push("Luxios icon must be a PNG at least 128 by 128 pixels.");
+}
+if (!icon.equals(originalIcon)) {
+  failures.push("The packaged Luxios icon must match the supplied crown artwork exactly.");
+}
+
 if (lockfile.version !== manifest.version || lockfile.packages?.[""]?.version !== manifest.version) {
   failures.push("package-lock.json must match the manifest version.");
 }
