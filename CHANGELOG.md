@@ -2,7 +2,11 @@
 
 All notable changes to Luxios are documented here.
 
-## 0.1.5 — Unreleased
+## 0.1.6 — 2026-10-02
+
+- Clarified the README and Marketplace copy to identify 0.1.6 as the current public release.
+
+## 0.1.5 — 2026-10-02
 
 - Replaced the placeholder crown icon with the original gold crown artwork supplied for Luxios.
 - Linked the README icon to the exact public artwork so it loads in the installed extension details view.
