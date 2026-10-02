@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icons/luxios-icon.png" width="128" alt="Luxios crown code mark">
+</p>
+
 # Luxios
 
 > Code in luxury.

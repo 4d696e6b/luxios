@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Luxios crown code mark</title>
+  <desc id="desc">A geometric champagne-gold crown with an integrated coding symbol on a deep navy field.</desc>
+  <rect width="256" height="256" rx="32" fill="#070B14"/>
+  <path fill="#D6B56D" d="M36 182 22 68l55 43L128 35l51 76 55-43-14 114H36Zm20-76 9 48 28-25-37-23Zm144 0-37 23 28 25 9-48Zm-72-38-29 49 29 25 29-25-29-49Z"/>
+  <path fill="#E6C887" d="m36 182 20-76 37 23 35-61v81l-35 30-28-25 5 28H36Zm164 0-20-76-37 23-15 20V68l35 61 28 25-5 28h34Z"/>
+  <path fill="#A58A52" d="M36 182h184l-12 30H48l-12-30Z"/>
+  <path fill="#E6C887" d="M48 212h160l-8 14H56l-8-14Z"/>
+  <path fill="#070B14" d="m78 145 20-14v12l-9 6 9 6v12l-20-14v-8Zm100 0v8l-20 14v-12l9-6-9-6v-12l20 14Z"/>
+  <path fill="#070B14" d="m137 127 12 4-30 55-12-4 30-55Z"/>
+</svg>

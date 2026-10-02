@@ -3,6 +3,7 @@
 .github/**
 .vscode/**
 examples/**
+icons/source/**
 scripts/**
 LUXIOS-PROJECT-PLAN.md
 *.vsix

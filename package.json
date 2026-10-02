@@ -4,6 +4,7 @@
   "description": "A refined dark VS Code theme with navy surfaces, champagne-gold accents, and clear everyday syntax.",
   "version": "0.1.0",
   "publisher": "zeaek",
+  "icon": "icons/luxios-icon.png",
   "license": "MIT",
   "engines": {
     "vscode": "^1.100.0"
