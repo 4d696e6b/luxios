@@ -2,6 +2,12 @@
 
 Use this document as the acceptance checklist for each release candidate. Record the date, VS Code build, operating system, language provider version, semantic-highlighting setting, theme variant, and result for every completed pass.
 
+## Latest recorded build
+
+On 2026-10-02, Luxios `0.1.4` was packaged with Node.js 22.12.0 on macOS 14.7.2. `npm ci`, `npm run validate`, `npm run package`, `npm run list-package`, and the Python fixture passed. The VSIX contains the manifest, license, README, changelog, crown PNG, and four theme JSON files. An isolated VS Code 1.96.2 profile installed it as `4d696e6b.luxios@0.1.4`. GitHub validation passed on both `main` and `dev` after the public repository was created.
+
+This records package and installation checks. The final screenshot set, current-build visual review of every variant, Windows smoke test, and physical OLED review are still pending; no result is inferred from the automated checks.
+
 ## Automated checks
 
 - Run `npm ci` followed by `npm run validate`. It checks JSON structure, variant inheritance, and the declared text/control contrast targets across all four variants.
