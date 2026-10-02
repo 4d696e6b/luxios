@@ -7,5 +7,6 @@ All notable changes to Luxios are documented here.
 - Added Luxios, Midnight, OLED, and Royale theme variants.
 - Added the Marketplace-ready Luxios crown code icon.
 - Added CI packaging and documented testing and release checks.
+- Set the initial compatibility floor to VS Code 1.96 after a local compatibility audit.
 - Added initial TextMate and semantic token rules for web development and Python.
 - Added core workbench, terminal, Git, diagnostics, diff, notebook, and supported chat colors.

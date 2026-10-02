@@ -7,7 +7,7 @@
   "icon": "icons/luxios-icon.png",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.96.0"
   },
   "categories": [
     "Themes"

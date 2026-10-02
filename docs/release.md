@@ -3,7 +3,7 @@
 ## Before publishing
 
 - Choose and verify the final Marketplace publisher ID. The current manifest's publisher is a development placeholder until ownership is confirmed.
-- Confirm the final GitHub repository, homepage, bugs URL, author copyright name, and `engines.vscode` floor from actual tested builds.
+- Confirm the final GitHub repository, homepage, bugs URL, and author copyright name. The current `engines.vscode` floor is `^1.96.0`, based on package installation against the locally available VS Code 1.96.2 build; newer native chat details are optional and require a newer build to verify visually.
 - Complete the test record in `docs/testing.md` for every variant.
 - Update `CHANGELOG.md`, version, README screenshots, and Marketplace metadata.
 - Run `npm ci`, `npm run validate`, `npm run package`, and `npm run list-package`.
