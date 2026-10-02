@@ -2,6 +2,7 @@
 .gitignore
 .github/**
 .vscode/**
+CONTRIBUTING.md
 docs/**
 examples/**
 icons/source/**

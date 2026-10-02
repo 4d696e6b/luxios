@@ -30,6 +30,10 @@ The fixtures in `examples/web` and `examples/python` are the initial syntax-revi
 
 `npm run package` creates a local VSIX after validation. The [testing record](docs/testing.md) and [release checklist](docs/release.md) document the review required before any public release.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for focused scope and readability reports.
+
 ## License
 
 [MIT](LICENSE)
