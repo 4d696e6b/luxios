@@ -48,12 +48,15 @@ for (const candidate of themes.slice(1)) {
   }
 }
 
-const pairs = [
-  ["primary editor text", "#E8ECF3", "#0B1120", 4.5],
-  ["secondary editor text", "#A6ADBB", "#0B1120", 4.5],
-  ["comments", "#8B95A7", "#0B1120", 4.5],
-  ["comment text on raised widgets", "#8B95A7", "#151D2E", 4.5],
-  ["gold button text", "#0B1120", "#D6B56D", 4.5]
+const inheritedColor = (candidate, token) => candidate.colors[token] ?? theme.colors[token];
+
+const contrastPairs = (candidate) => [
+  ["primary editor text", inheritedColor(candidate, "editor.foreground"), inheritedColor(candidate, "editor.background"), 4.5],
+  ["secondary interface text", "#A6ADBB", inheritedColor(candidate, "sideBar.background"), 4.5],
+  ["comments", "#8B95A7", inheritedColor(candidate, "editor.background"), 4.5],
+  ["comments on raised widgets", "#8B95A7", inheritedColor(candidate, "editorHoverWidget.background"), 4.5],
+  ["comments on selected text", "#8B95A7", inheritedColor(candidate, "editor.selectionBackground"), 4.5],
+  ["gold button text", inheritedColor(candidate, "button.foreground"), inheritedColor(candidate, "button.background"), 4.5]
 ];
 
 const variantExpectations = {
@@ -80,9 +83,13 @@ for (const candidate of themes.slice(1)) {
   }
 }
 
-for (const [name, foreground, background, minimum] of pairs) {
-  const ratio = contrast(foreground, background);
-  if (ratio < minimum) failures.push(`${name} is ${ratio.toFixed(2)}:1; expected at least ${minimum}:1.`);
+const contrastResults = [];
+for (const candidate of themes) {
+  for (const [name, foreground, background, minimum] of contrastPairs(candidate)) {
+    const ratio = contrast(foreground, background);
+    contrastResults.push([candidate.name, name, ratio]);
+    if (ratio < minimum) failures.push(`${candidate.name}: ${name} is ${ratio.toFixed(2)}:1; expected at least ${minimum}:1.`);
+  }
 }
 
 if (failures.length) {
@@ -90,5 +97,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log("Luxios validation passed.");
-  for (const [name, foreground, background] of pairs) console.log(`${name}: ${contrast(foreground, background).toFixed(2)}:1`);
+  for (const [variant, name, ratio] of contrastResults) console.log(`${variant} — ${name}: ${ratio.toFixed(2)}:1`);
 }

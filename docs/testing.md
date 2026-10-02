@@ -4,7 +4,7 @@ Use this document as the acceptance checklist for each release candidate. Record
 
 ## Automated checks
 
-- Run `npm ci` followed by `npm run validate`.
+- Run `npm ci` followed by `npm run validate`. It checks JSON structure, variant inheritance, and the declared text/control contrast targets across all four variants.
 - Run `npm run package` and inspect `npm run list-package`.
 - Confirm every included file belongs in the VSIX.
 - Compile and run `examples/python/luxios_showcase.py`.
