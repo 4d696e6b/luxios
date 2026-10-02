@@ -1,0 +1,9 @@
+.git/**
+.gitignore
+.github/**
+.vscode/**
+examples/**
+scripts/**
+LUXIOS-PROJECT-PLAN.md
+*.vsix
+node_modules/**
