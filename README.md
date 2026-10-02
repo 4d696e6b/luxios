@@ -8,6 +8,8 @@
 
 Luxios is a dark VS Code theme built around deep navy surfaces, restrained champagne-gold interaction cues, and clear syntax for TypeScript, React, and Python.
 
+Every control keeps a muted-gold frame. Selected controls gain a warmer surface, and keyboard focus moves to bright champagne gold—Luxios's glow-like treatment within the colors VS Code exposes.
+
 ## Prototype status
 
 This repository currently contains the `0.1.0` theme-family prototype.
